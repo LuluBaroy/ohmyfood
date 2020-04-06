@@ -1,14 +1,91 @@
-section:not(header) {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  border: 1px solid black;
-}
-
 @font-face {
   font-family: Devonshire;
   src: url("font/Devonshire-Regular.ttf");
 }
+@font-face {
+  font-family: kaushan;
+  src: url("font/KaushanScript-Regular.otf");
+}
+@font-face {
+  font-family: croissant;
+  src: url("font/CroissantOne-Regular.ttf");
+}
+@font-face {
+  font-family: dancing;
+  src: url("font/DancingScript-Regular.otf");
+}
+body {
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+section:not(header) {
+  width: 80%;
+  height: 350px;
+  margin: 10% auto 10% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  word-break: break-word;
+  box-shadow: 2px 2px 12px black;
+  text-align: center;
+  padding: 10%;
+}
+section:not(header) a {
+  text-decoration: none;
+}
+section:not(header) h3 {
+  font-size: 35px;
+}
+section:not(header) p {
+  font-size: 30px;
+  padding-top: 10%;
+}
+
+#menu1 {
+  background-color: #FCDFDB;
+}
+#menu1 img {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto 10% auto;
+}
+#menu1 h3 {
+  font-family: "Devonshire";
+}
+
+#menu2 {
+  background-color: #FFF5FE;
+  font-family: "croissant";
+}
+#menu2 a {
+  background: linear-gradient(to right, #D8852E, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menu3 {
+  background-color: #F9F9F9;
+  font-family: "dancing";
+}
+#menu3 a {
+  background: linear-gradient(to right, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menu4 {
+  background-color: #FDFFFD;
+  margin-bottom: 50%;
+  font-family: "kaushan";
+}
+#menu4 a {
+  background: linear-gradient(to right, #42973C, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
   display: flex;
   justify-content: center;
