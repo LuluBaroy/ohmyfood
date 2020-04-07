@@ -143,18 +143,17 @@ h3 img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
   background-color: #579C87;
   color: #FDCB46;
   font-family: "Arial";
-  margin: 10% auto 40% auto;
+  margin: 10% auto 60% auto;
   border-radius: 30px;
 }
 #coming p {
-  font-size: 35px;
+  font-size: 20px;
 }
 #coming span {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 #dot1 {
@@ -262,6 +261,13 @@ footer a:hover {
 
   p {
     font-size: 45px;
+  }
+
+  #coming p {
+    font-size: 45px;
+  }
+  #coming span {
+    font-size: 25px;
   }
 
   footer {
