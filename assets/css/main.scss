@@ -145,17 +145,16 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
   background-color: $color-header-coming-footer;
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
-  margin: 10% auto 40% auto;
+  margin: 10% auto 60% auto;
   border-radius: 30px;
   p{
-    font-size: 35px;
+    font-size: 20px;
   }
   span{
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 #dot1{
@@ -263,6 +262,14 @@ footer{
   p{
       font-size: 45px;
     }
+  #coming{
+    p{
+      font-size: 45px;
+    }
+    span{
+      font-size: 25px;
+    }
+  }
   footer{
     flex-direction: row;
     justify-content: space-around;
@@ -303,7 +310,6 @@ footer{
     margin-right: 5%;
     }
 }
-
 
 /*Large computer screen*/
 @media(min-width: 1200px){
