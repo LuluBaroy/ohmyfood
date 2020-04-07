@@ -1,18 +1,18 @@
 @font-face {
   font-family: Devonshire;
-  src: url("../font/Devonshire-Regular.ttf"), url("../font/devonshire-regular-webfont.woff2") format("woff2"), url("../font/devonshire-regular-webfont.woff") format("woff");
+  src: url("../font/devonshire-regular-webfont.woff2") format("woff2"), url("../font/devonshire-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: kaushan;
-  src: url("../font/KaushanScript-Regular.otf"), url("../font/kaushanscript-regular-webfont.woff2") format("woff2"), url("../font/kaushanscript-regular-webfont.woff") format("woff"), url("../font/KaushanScript-Regular.svg") format("svg"), url("../font/KaushanScript-Regular.ttf") format("truetype");
+  src: url("../font/KaushanScript-Regular.otf"), url("../font/kaushanscript-regular-webfont.woff2") format("woff2"), url("../font/kaushanscript-regular-webfont.woff") format("woff"), url("../font/KaushanScript-Regular.svg") format("svg");
 }
 @font-face {
   font-family: croissant;
-  src: url("../font/CroissantOne-Regular.ttf"), url("../font/croissantone-regular-webfont.woff2") format("woff2"), url("../font/croissantone-regular-webfont.woff") format("woff"), url("../font/CroissantOne-Regular.ttf") format("truetype"),  url("../font/CroissantOne-Regular.svg") format("svg");
+  src: url("../font/CroissantOne-Regular.ttf"), url("../font/croissantone-regular-webfont.woff2") format("woff2"), url("../font/croissantone-regular-webfont.woff") format("woff"), url("../font/CroissantOne-Regular.svg") format("svg");
 }
 @font-face {
   font-family: dancing;
-  src: url("../font/DancingScript-Regular.otf"), url("../font/dancingscript-regular-webfont.woff2") format("woff2"), url("../font/dancingscript-regular-webfont.woff") format("woff"), url("../font/DancingScript-Regular.svg") format("svg"), url("../font/DancingScript-Regular.ttf") format("truetype");
+  src: url("../font/DancingScript-Regular.otf"), url("../font/dancingscript-regular-webfont.woff2") format("woff2"), url("../font/dancingscript-regular-webfont.woff") format("woff"), url("../font/DancingScript-Regular.svg") format("svg");
 }
 main {
   -webkit-box-sizing: border-box;
