@@ -4,16 +4,20 @@
 }
 @font-face {
   font-family: kaushan;
-  src: url("font/kaushanscript-regular-webfont.woff2") format("woff2"), url("font/kaushanscript-regular-webfont.woff") format("woff"), url("font/KaushanScript-Regular.svg") format("svg"), url("font/KaushanScript-Regular.eot") format("eot");
+  src: url("font/KaushanScript-Regular.eot") format("eot"), url("font/KaushanScript-Regular.otf"), url("font/kaushanscript-regular-webfont.woff2") format("woff2"), url("font/kaushanscript-regular-webfont.woff") format("woff"), url("font/KaushanScript-Regular.svg") format("svg");
 }
 @font-face {
   font-family: croissant;
-  src: url("font/CroissantOne-Regular.ttf"), url("font/croissantone-regular-webfont.woff2") format("woff2"), url("font/croissantone-regular-webfont.woff") format("woff"), url("font/CroissantOne-Regular.eot") format("eot"), url("font/CroissantOne-Regular.svg") format("svg");
+  src: url("font/CroissantOne-Regular.eot") format("eot"), url("font/croissantone-regular-webfont.woff2") format("woff2"), url("font/croissantone-regular-webfont.woff") format("woff"), url("font/CroissantOne-Regular.svg") format("svg");
 }
 @font-face {
   font-family: dancing;
-  src: url("font/DancingScript-Regular.otf"), url("font/dancingscript-regular-webfont.woff2") format("woff2"), url("font/dancingscript-regular-webfont.woff") format("woff"), url("font/DancingScript-Regular.svg") format("svg"), url("font/DancingScript-Regular.eot") format("eot");
+  src: url("font/DancingScript-Regular.eot") format("eot"), url("font/DancingScript-Regular.otf"), url("font/dancingscript-regular-webfont.woff2") format("woff2"), url("font/dancingscript-regular-webfont.woff") format("woff"), url("font/DancingScript-Regular.svg") format("svg");
 }
+.font {
+  font-family: "Segoe Print";
+}
+
 main {
   box-sizing: border-box;
   word-break: break-word;
@@ -53,12 +57,12 @@ header {
 #menu1 a, #menu2 a, #menu3 a, #menu4 a {
   text-decoration: none;
   transform: scale(0.8);
-  opacity: 1;
+  opacity: 0.8;
   transition: all ease-out 250ms;
 }
 #menu1 a:hover, #menu2 a:hover, #menu3 a:hover, #menu4 a:hover {
   transform: scale(1);
-  opacity: 0.9;
+  opacity: 1;
 }
 #menu1 h3, #menu2 h3, #menu3 h3, #menu4 h3 {
   font-size: 50px;
@@ -66,7 +70,6 @@ header {
 #menu1 p, #menu2 p, #menu3 p, #menu4 p {
   font-size: 40px;
   padding-top: 10%;
-  font-family: "Segoe Print";
 }
 
 #menu1 {
@@ -101,7 +104,7 @@ header {
   font-size: 40px;
 }
 #menu2 a {
-  background: linear-gradient(to right, #D8852E, #905BFD);
+  background: linear-gradient(167deg, #e38913, #8f5bfe 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,7 +114,7 @@ header {
   font-family: "dancing";
 }
 #menu3 a {
-  background: linear-gradient(to right, #0431DF, #0887FB);
+  background: linear-gradient(167deg, #0020d8, #0889fb 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,7 +124,7 @@ header {
   font-family: "kaushan";
 }
 #menu4 a {
-  background: linear-gradient(to right, #42973C, #BFFF7E);
+  background: linear-gradient(167deg, #0020d8, #0889fb 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
