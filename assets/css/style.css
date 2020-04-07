@@ -1,0 +1,314 @@
+@font-face {
+  font-family: Devonshire;
+  src: url("font/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: kaushan;
+  src: url("font/KaushanScript-Regular.otf");
+}
+@font-face {
+  font-family: croissant;
+  src: url("font/CroissantOne-Regular.ttf");
+}
+@font-face {
+  font-family: dancing;
+  src: url("font/DancingScript-Regular.otf");
+}
+main {
+  box-sizing: border-box;
+  word-break: break-word;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579C87;
+  flex: 0 0 100%;
+  height: 144px;
+  font-size: 54px;
+  color: #FDCB46;
+  font-family: "Arial";
+  font-weight: bold;
+  letter-spacing: -6px;
+}
+
+#menu1, #menu2, #menu3, #menu4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 80%;
+  height: 350px;
+  margin: 5% auto 0 auto;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 25px -4px #616585;
+  text-align: center;
+  padding: 2%;
+}
+#menu1 a, #menu2 a, #menu3 a, #menu4 a {
+  text-decoration: none;
+  transform: scale(0.8);
+  opacity: 1;
+  transition: all ease-out 250ms;
+}
+#menu1 a:hover, #menu2 a:hover, #menu3 a:hover, #menu4 a:hover {
+  transform: scale(1);
+  opacity: 0.9;
+}
+#menu1 h3, #menu2 h3, #menu3 h3, #menu4 h3 {
+  font-size: 50px;
+}
+#menu1 p, #menu2 p, #menu3 p, #menu4 p {
+  font-size: 40px;
+  padding-top: 10%;
+  font-family: "Segoe Print";
+}
+
+#menu1 {
+  background-color: #FCDFDB;
+  font-family: "Devonshire";
+}
+#menu1 img {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto 10% auto;
+  font-size: 130px;
+  justify-content: center;
+  background: linear-gradient(to right, #F04A5E, #F5BC65);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu1 a {
+  color: #3C1218;
+}
+#menu1 a:visited {
+  color: #3C1218;
+}
+#menu1 a:hover {
+  color: #611D27;
+}
+
+#menu2 {
+  background-color: #FFF5FE;
+}
+#menu2 h3, #menu2 p {
+  font-family: "croissant";
+  font-size: 40px;
+}
+#menu2 a {
+  background: linear-gradient(to right, #D8852E, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menu3 {
+  background-color: #F9F9F9;
+  font-family: "dancing";
+}
+#menu3 a {
+  background: linear-gradient(to right, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menu4 {
+  background-color: #FDFFFD;
+  font-family: "kaushan";
+}
+#menu4 a {
+  background: linear-gradient(to right, #42973C, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+h3 img {
+  display: none;
+  box-sizing: border-box;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+#coming {
+  width: 72%;
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Arial";
+  margin: 10% auto 40% auto;
+  border-radius: 30px;
+}
+#coming p {
+  font-size: 35px;
+}
+#coming span {
+  font-size: 15px;
+}
+
+#dot1 {
+  animation: blink 2s infinite linear;
+}
+
+#dot2 {
+  animation: blink 2s infinite linear;
+  animation-delay: 0.3s;
+}
+
+#dot3 {
+  animation: blink 2s infinite linear;
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    opacity: 0.9;
+    transform: translate3d(0, -10px, 0);
+  }
+  25% {
+    transform: translate3d(0, -25px, 0);
+  }
+  40% {
+    opacity: 0.1;
+    transform: translate3d(0, -10px, 0);
+  }
+  50% {
+    visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  60% {
+    opacity: 0.1;
+    transform: translate3d(0, -10px, 0);
+  }
+  75% {
+    transform: translate3d(0, -25px, 0);
+  }
+  90% {
+    opacity: 0.9;
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+footer {
+  background-color: #579C87;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 135px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+footer a {
+  color: #FDCB46;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Arial";
+}
+footer a:first-child {
+  flex: 0 0 45%;
+  padding-top: 5%;
+}
+footer a:last-child {
+  flex: 0 0 48%;
+}
+footer a:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+/*Mobile Landscape and TabletPortrait*/
+@media screen and (min-width: 577px) {
+  header {
+    font-size: 74px;
+    height: 246px;
+  }
+
+  p {
+    font-size: 45px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer a {
+    font-size: 36px;
+  }
+  footer a:first-child {
+    padding-top: 0;
+    text-align: left;
+  }
+  footer a:last-child {
+    text-align: right;
+  }
+}
+/*Tablet Landscape*/
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  #menu1, #menu2, #menu3, #menu4 {
+    flex: 0 0 45%;
+  }
+
+  #coming {
+    width: 50%;
+    margin-bottom: 22%;
+  }
+  #coming p {
+    font-size: 42px;
+  }
+}
+/*Computer screen*/
+@media screen and (min-width: 992px) {
+  #menu1, #menu2, #menu3, #menu4 {
+    height: 760px;
+    margin-right: 5%;
+  }
+}
+/*Large computer screen*/
+@media (min-width: 1200px) {
+  main {
+    margin: 5% 8% 5% 12%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
