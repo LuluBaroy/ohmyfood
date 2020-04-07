@@ -1,7 +1,12 @@
 $color-menu1: #FCDFDB;
+$color-font-menu1: #611D27;
+$color-font2-menu1: #3C1218;
 $color-menu2: #FFF5FE;
 $color-menu3: #F9F9F9;
 $color-menu4: #FDFFFD;
+$color-header-coming-footer: #579C87;
+$color-font-head-coming-foot: #FDCB46;
+$font-head-coming-foot: "Arial";
 @font-face {
   font-family: Devonshire;
   src: url("font/Devonshire-Regular.ttf");
@@ -18,52 +23,93 @@ $color-menu4: #FDFFFD;
   font-family: dancing;
   src: url("font/DancingScript-Regular.otf");
 }
-body{
+main{
   box-sizing: border-box;
   word-break: break-word;
-}
-section:not(header){
-  width: 80%;
-  height: 350px;
-  margin: 10% auto 10% auto;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+header{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: $color-header-coming-footer;
+  flex: 0 0 100%;
+  height: 144px;
+  font-size: 54px;
+  color: $color-font-head-coming-foot;
+  font-family: $font-head-coming-foot;
+  font-weight: bold;
+  letter-spacing: -6px;
+}
+#menu1, #menu2, #menu3, #menu4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 80%;
+  height: 350px;
+  margin: 5% auto 0 auto;
   box-sizing: border-box;
-  word-break: break-word;
-  box-shadow: 2px 2px 12px black;
+  word-wrap: break-word;
+  box-shadow:  0px 0px 25px -4px #616585;
   text-align: center;
-  padding: 10%;
-  a{
+  padding: 2%;
+  a {
     text-decoration: none;
+    transform: scale(0.8);
+    opacity: 1;
+    transition: all ease-out 250ms;
+    &:hover{
+      transform: scale(1);
+      opacity: 0.9;
+    }
   }
   h3{
-    font-size: 35px;
+    font-size: 50px;
   }
   p{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 10%;
+    font-family: "Segoe Print";
   }
 }
 #menu1{
   background-color: $color-menu1;
+  font-family: "Devonshire";
   img{
     display: flex;
     box-sizing: border-box;
     margin: 0 auto 10% auto;
+    font-size: 130px;
+    justify-content: center;
+    background: linear-gradient(to right, #F04A5E, #F5BC65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  h3{
-    font-family: "Devonshire";
+  a{
+    color: $color-font2-menu1;
+    &:visited{
+      color: $color-font2-menu1;
+    }
+    &:hover{
+      color: $color-font-menu1;
+    }
   }
 }
 #menu2{
   background-color: $color-menu2;
-  font-family: "croissant";
+  h3, p{
+    font-family: "croissant";
+    font-size: 40px;
+  }
   a{
     background: linear-gradient(to right, #D8852E, #905BFD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
 }
 #menu3{
   background-color: $color-menu3;
@@ -76,26 +122,12 @@ section:not(header){
 }
 #menu4{
   background-color: $color-menu4;
-  margin-bottom: 50%;
   font-family: "kaushan";
   a{
     background: linear-gradient(to right, #42973C, #BFFF7E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #579C87;
-  max-width: 100%;
-  height: 144px;
-  font-size: 54px;
-  color: #FDCB46;
-  font-family: "Arial";
-  font-weight: bold;
-  letter-spacing: -6px;
 }
 h3{
   display: flex;
@@ -107,8 +139,74 @@ h3{
     max-width: 100%;
   }
 }
+#coming{
+  width: 72%;
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: $color-header-coming-footer;
+  color: $color-font-head-coming-foot;
+  font-family: $font-head-coming-foot;
+  margin: 10% auto 40% auto;
+  border-radius: 30px;
+  p{
+    font-size: 35px;
+  }
+  span{
+    font-size: 15px;
+  }
+}
+#dot1{
+  animation: blink 2s infinite linear;
+}
+#dot2{
+  animation: blink 2s infinite linear;
+  animation-delay: 0.3s;
+}
+#dot3{
+  animation: blink 2s infinite linear;
+  animation-delay: 0.6s;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    opacity: 0.9;
+    transform: translate3d(0, -10px, 0);
+  }
+  25% {
+    transform: translate3d(0, -25px, 0);
+  }
+  40%{
+    opacity: 0.1;
+    transform: translate3d(0, -10px, 0);
+  }
+  50%{
+    visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  60% {
+    opacity: 0.1;
+    transform: translate3d(0, -10px, 0);
+  }
+  75%{
+    transform: translate3d(0, -25px, 0);
+  }
+  90% {
+    opacity: 0.9;
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 footer{
-  background-color: #579C87;
+  background-color: $color-header-coming-footer;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -119,11 +217,10 @@ footer{
   align-items: center;
   justify-content: space-between;
   a{
-    color: #FDCB46;
+    color: $color-font-head-coming-foot;
     font-size: 25px;
     text-decoration: none;
-    font-family: "Arial";
-    font-weight: bold;
+    font-family: $font-head-coming-foot;
     &:first-child{
       flex: 0 0 45%;
       padding-top: 5%;
@@ -154,5 +251,63 @@ footer{
 
   40%, 60% {
     transform: translate3d(5px, 0, 0);
+  }
+}
+
+/*Mobile Landscape and TabletPortrait*/
+@media screen and (min-width: 577px){
+  header{
+    font-size: 74px;
+    height: 246px;
+  }
+  p{
+      font-size: 45px;
+    }
+  footer{
+    flex-direction: row;
+    justify-content: space-around;
+    a{
+      font-size: 36px;
+      &:first-child{
+        padding-top: 0;
+        text-align: left;
+      }
+      &:last-child{
+        text-align: right;
+      }
+    }
+  }
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width: 768px){
+  main{
+    flex-direction: row;
+  }
+  #menu1, #menu2, #menu3, #menu4{
+    flex: 0 0 45%;
+  }
+  #coming{
+    width: 50%;
+    margin-bottom: 22%;
+    p{
+      font-size: 42px;
+    }
+  }
+}
+
+/*Computer screen*/
+@media screen and (min-width: 992px){
+  #menu1, #menu2, #menu3, #menu4{
+    height: 760px;
+    margin-right: 5%;
+    }
+}
+
+
+/*Large computer screen*/
+@media(min-width: 1200px){
+  main{
+    margin: 5% 8% 5% 12%;
   }
 }
