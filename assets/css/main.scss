@@ -9,19 +9,23 @@ $color-font-head-coming-foot: #FDCB46;
 $font-head-coming-foot: "Arial";
 @font-face {
   font-family: Devonshire;
-  src: url("font/Devonshire-Regular.ttf");
+  src: url("font/Devonshire-Regular.woff") format('woff');
 }
 @font-face {
   font-family: kaushan;
-  src: url("font/KaushanScript-Regular.otf");
+  src: url("font/KaushanScript-Regular.woff") format('woff');
 }
 @font-face {
   font-family: croissant;
-  src: url("font/CroissantOne-Regular.ttf");
+  src: url("font/CroissantOne-Regular.woff") format('woff');
 }
 @font-face {
   font-family: dancing;
-  src: url("font/DancingScript-Regular.otf");
+  src: url("font/DancingScript-Regular.woff") format ('woff');
+}
+@font-face {
+  font-family: "Segoe Print";
+  src: url("font/Segoe Print.woff") format('woff');
 }
 main{
   box-sizing: border-box;
@@ -109,7 +113,9 @@ header{
     background: linear-gradient(to right, #D78431 0%, #905BFC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } else {
+    color: #D78431;
+      }
 
 }
 #menu3{
@@ -120,7 +126,9 @@ header{
     background: linear-gradient(to right, #0431DF 0%, #0887FB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } else {
+    color: #0431DF;
+      }
 }
 #menu4{
   background-color: $color-menu4;
@@ -130,7 +138,9 @@ header{
     background: linear-gradient(to right, #42973C 0%, #BFFF7E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } else {
+    color: #42973C;
+      }
 }
 h3{
   display: flex;
@@ -148,14 +158,13 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
   background-color: $color-header-coming-footer;
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
-  margin: 10% auto 40% auto;
+  margin: 10% auto 60% auto;
   border-radius: 30px;
   p{
-    font-size: 35px;
+    font-size: 20px;
   }
   span{
     font-size: 15px;
@@ -262,6 +271,12 @@ footer{
   header{
     font-size: 74px;
     height: 246px;
+  }
+  #coming{
+    margin-bottom: 45%;
+    p{
+      font-size: 35px;
+    }
   }
   p{
       font-size: 45px;
