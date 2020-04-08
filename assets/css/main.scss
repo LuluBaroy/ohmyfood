@@ -21,7 +21,7 @@ $font-head-coming-foot: "Arial";
 }
 @font-face {
   font-family: dancing;
-  src: url("font/DancingScript-Regular.woff") format ('woff');
+  src: url("font/DancingScript-Regular.woff") format('woff');
 }
 @font-face {
   font-family: "Segoe Print";
@@ -109,38 +109,46 @@ header{
     font-size: 40px;
   }
   a{
-    background: -webkit-gradient(linear, left top, right top, from(#D78431), to(#905BFC));
-    background: linear-gradient(to right, #D78431 0%, #905BFC 100%);
+    background: rgba(215,132,49,1);
+    background: -moz-linear-gradient(left, rgba(215,132,49,1) 0%, rgba(145,91,251,1) 87%, rgba(145,91,251,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(215,132,49,1)), color-stop(87%, rgba(145,91,251,1)), color-stop(100%, rgba(145,91,251,1)));
+    background: -webkit-linear-gradient(left, rgba(215,132,49,1) 0%, rgba(145,91,251,1) 87%, rgba(145,91,251,1) 100%);
+    background: -o-linear-gradient(left, rgba(215,132,49,1) 0%, rgba(145,91,251,1) 87%, rgba(145,91,251,1) 100%);
+    background: -ms-linear-gradient(left, rgba(215,132,49,1) 0%, rgba(145,91,251,1) 87%, rgba(145,91,251,1) 100%);
+    background: linear-gradient(to right, rgba(215,132,49,1) 0%, rgba(145,91,251,1) 87%, rgba(145,91,251,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  } else {
-    color: #D78431;
-      }
-
+  }
 }
 #menu3{
   background-color: $color-menu3;
   font-family: "dancing";
   a{
-    background: -webkit-gradient(linear, left top, right top, from(#0431DF), to(#0887FB));
-    background: linear-gradient(to right, #0431DF 0%, #0887FB 100%);
+    background: rgba(4,52,224,1);
+    background: -moz-linear-gradient(left, rgba(4,52,224,1) 0%, rgba(4,52,224,1) 13%, rgba(8,133,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,52,224,1)), color-stop(13%, rgba(4,52,224,1)), color-stop(100%, rgba(8,133,250,1)));
+    background: -webkit-linear-gradient(left, rgba(4,52,224,1) 0%, rgba(4,52,224,1) 13%, rgba(8,133,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(4,52,224,1) 0%, rgba(4,52,224,1) 13%, rgba(8,133,250,1) 100%);
+    background: -ms-linear-gradient(left, rgba(4,52,224,1) 0%, rgba(4,52,224,1) 13%, rgba(8,133,250,1) 100%);
+    background: linear-gradient(to right, rgba(4,52,224,1) 0%, rgba(4,52,224,1) 13%, rgba(8,133,250,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  } else {
-    color: #0431DF;
-      }
+  }
 }
 #menu4{
   background-color: $color-menu4;
   font-family: "kaushan";
   a{
-    background: -webkit-gradient(linear, left top, right top, from(#42973C), to(#BFFF7E));
-    background: linear-gradient(to right, #42973C 0%, #BFFF7E 100%);
+    background: rgba(66,151,60,1);
+    background: -moz-linear-gradient(left, rgba(66,151,60,1) 0%, rgba(189,253,125,1) 87%, rgba(189,253,125,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(66,151,60,1)), color-stop(87%, rgba(189,253,125,1)), color-stop(100%, rgba(189,253,125,1)));
+    background: -webkit-linear-gradient(left, rgba(66,151,60,1) 0%, rgba(189,253,125,1) 87%, rgba(189,253,125,1) 100%);
+    background: -o-linear-gradient(left, rgba(66,151,60,1) 0%, rgba(189,253,125,1) 87%, rgba(189,253,125,1) 100%);
+    background: -ms-linear-gradient(left, rgba(66,151,60,1) 0%, rgba(189,253,125,1) 87%, rgba(189,253,125,1) 100%);
+    background: linear-gradient(to right, rgba(66,151,60,1) 0%, rgba(189,253,125,1) 87%, rgba(189,253,125,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  } else {
-    color: #42973C;
-      }
+  }
 }
 h3{
   display: flex;
