@@ -101,7 +101,7 @@ header {
   font-size: 40px;
 }
 #menu2 a {
-  background: linear-gradient(to right, #D8852E, #905BFD);
+  background: -webkit-linear-gradient(to right, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -111,7 +111,7 @@ header {
   font-family: "dancing";
 }
 #menu3 a {
-  background: linear-gradient(to right, #0431DF, #0887FB);
+  background: -webkit-linear-gradient(to right, #0431DF, #0887FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,7 +121,7 @@ header {
   font-family: "kaushan";
 }
 #menu4 a {
-  background: linear-gradient(to right, #42973C, #BFFF7E);
+  background: -webkit-linear-gradient(to right, #42973C, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
