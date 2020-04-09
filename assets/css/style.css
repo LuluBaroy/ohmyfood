@@ -18,6 +18,12 @@
   font-family: "Segoe Print";
   src: url("font/Segoe Print.woff") format("woff");
 }
+body {
+  text-align: center;
+  margin: auto;
+  word-break: break-word;
+}
+
 main {
   box-sizing: border-box;
   word-break: break-word;
@@ -40,7 +46,7 @@ header {
   letter-spacing: -6px;
 }
 
-#menu1, #menu2, #menu3, #menu4 {
+#menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,30 +60,128 @@ header {
   text-align: center;
   padding: 2%;
 }
-#menu1 a, #menu2 a, #menu3 a, #menu4 a {
+#menu1_homepage a, #menu2_homepage a, #menu3_homepage a, #menu4_homepage a {
   text-decoration: none;
   transform: scale(0.8);
   opacity: 1;
   transition: all ease-out 250ms;
 }
-#menu1 a:hover, #menu2 a:hover, #menu3 a:hover, #menu4 a:hover {
+#menu1_homepage a:hover, #menu2_homepage a:hover, #menu3_homepage a:hover, #menu4_homepage a:hover {
   transform: scale(1);
   opacity: 0.9;
 }
-#menu1 h3, #menu2 h3, #menu3 h3, #menu4 h3 {
+#menu1_homepage h3, #menu2_homepage h3, #menu3_homepage h3, #menu4_homepage h3 {
   font-size: 50px;
 }
-#menu1 p, #menu2 p, #menu3 p, #menu4 p {
+#menu1_homepage p, #menu2_homepage p, #menu3_homepage p, #menu4_homepage p {
   font-size: 40px;
   padding-top: 10%;
   font-family: "Segoe Print";
 }
 
-#menu1 {
-  background-color: #FCDFDB;
+.menu-card {
+  width: 90%;
+  height: 70%;
+  padding: 5%;
+  margin: 5% auto 50% auto;
+  word-wrap: break-word;
+  box-shadow: 3px 0px 12px lightgrey;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.menu-card h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 53px;
+}
+.menu-card h3 img {
+  display: none;
+  box-sizing: border-box;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+.menu-card section {
+  padding-bottom: 50px;
+}
+.menu-card li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 36px;
+}
+.menu-card li p:first-child {
+  flex: 0 0 90%;
+}
+.menu-card li p:nth-child(2) {
+  padding-top: 10px;
+  font-weight: bold;
+}
+.menu-card #menu1_card_identityTop {
+  font-size: 59px;
+  padding-bottom: 65px;
   font-family: "Devonshire";
 }
-#menu1 img {
+.menu-card #menu1_card_identityTop img {
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: scale-down;
+}
+.menu-card #menu1_card_identityBottom {
+  font-size: 43px;
+  font-family: "Devonshire";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-card #menu1_card_identityBottom img {
+  max-width: 67px;
+  box-sizing: border-box;
+  object-fit: scale-down;
+}
+.menu-card .underline-title {
+  position: relative;
+}
+.menu-card .underline-title::after {
+  content: "";
+  background-color: #3d1319;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0.8;
+  -webkit-transition: width 300ms;
+  transition: width 300ms;
+}
+.menu-card .underline-title:hover::after {
+  width: 100%;
+}
+
+.before-menu-card {
+  display: flex;
+}
+.before-menu-card .menu-card_title {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0 55px 0;
+  font-size: 41px;
+  font-family: "Arial";
+  font-weight: bold;
+  color: #353535;
+}
+.before-menu-card .return {
+  display: none;
+}
+
+#menu1_homepage {
+  background-color: #FDE0DC;
+  font-family: "Devonshire";
+}
+#menu1_homepage img {
   display: flex;
   box-sizing: border-box;
   margin: 0 auto 10% auto;
@@ -87,61 +191,56 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#menu1 a {
+#menu1_homepage a {
   color: #3C1218;
 }
-#menu1 a:visited {
+#menu1_homepage a:visited {
   color: #3C1218;
 }
-#menu1 a:hover {
-  color: #611D27;
+#menu1_homepage a:hover {
+  color: #3D1319;
 }
 
-#menu2 {
+#menu1 .menu-card {
+  background-color: #FDE0DC;
+  color: #3D1319;
+  font-family: "Segoe Print";
+}
+
+#menu2_homepage {
   background-color: #FFF5FE;
 }
-#menu2 h3, #menu2 p {
+#menu2_homepage h3, #menu2_homepage p {
   font-family: "croissant";
   font-size: 40px;
 }
-#menu2 p {
+#menu2_homepage p {
   color: #C77412;
 }
-#menu2 h3 {
+#menu2_homepage h3 {
   background-image: url("../img/bg-menu2.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#menu3 {
+#menu3_homepage {
   background-color: #F9F9F9;
   font-family: "dancing";
 }
-#menu3 a {
+#menu3_homepage a {
   background-image: url("../img/bg-menu3.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#menu4 {
+#menu4_homepage {
   background-color: #FDFFFD;
   font-family: "kaushan";
 }
-#menu4 a {
+#menu4_homepage a {
   background-image: url("../img/bg-menu4.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-h3 {
-  display: flex;
-  justify-content: center;
-}
-h3 img {
-  display: none;
-  box-sizing: border-box;
-  object-fit: scale-down;
-  max-width: 100%;
 }
 
 #coming {
@@ -266,15 +365,19 @@ footer a:hover {
     height: 246px;
   }
 
+  main p {
+    font-size: 45px;
+  }
+
+  .menu-card {
+    margin-bottom: 20%;
+  }
+
   #coming {
     margin-bottom: 45%;
   }
   #coming p {
     font-size: 35px;
-  }
-
-  p {
-    font-size: 45px;
   }
 
   footer {
@@ -298,8 +401,41 @@ footer a:hover {
     flex-direction: row;
   }
 
-  #menu1, #menu2, #menu3, #menu4 {
+  #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage {
     flex: 0 0 45%;
+  }
+
+  .before-menu-card .menu-card_title {
+    flex: 0 0 100%;
+  }
+  .before-menu-card .return {
+    display: flex;
+    position: absolute;
+    top: 275px;
+    margin-left: 10%;
+  }
+  .before-menu-card .return img {
+    box-sizing: border-box;
+    object-fit: scale-down;
+    max-width: 20%;
+  }
+
+  .menu-card {
+    width: 80%;
+  }
+  .menu-card li {
+    text-align: left;
+    flex-direction: row;
+  }
+  .menu-card h3 {
+    justify-content: space-between;
+  }
+  .menu-card h3 img {
+    display: flex;
+    flex: 0 0 30%;
+  }
+  .menu-card_identityTop {
+    padding: 87px 0 100px 0;
   }
 
   #coming {
@@ -312,9 +448,23 @@ footer a:hover {
 }
 /*Computer screen*/
 @media screen and (min-width: 992px) {
-  #menu1, #menu2, #menu3, #menu4 {
+  #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage {
     height: 760px;
     margin-right: 5%;
+  }
+
+  .before-menu-card {
+    padding-top: 70px;
+  }
+  .before-menu-card .return {
+    top: 350px;
+  }
+
+  .menu1_card {
+    padding: 10% 10% 0 10%;
+  }
+  .menu1_card_identityBottom {
+    padding: 70px 0 120px 0;
   }
 }
 /*Large computer screen*/
