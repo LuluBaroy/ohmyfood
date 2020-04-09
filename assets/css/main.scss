@@ -1,10 +1,10 @@
-$color-menu1: #FCDFDB;
-$color-font-menu1: #611D27;
+$bg-menu1: #FDE0DC;
+$color-font-menu1: #3D1319;
 $color-font2-menu1: #3C1218;
-$color-menu2: #FFF5FE;
-$color-menu3: #F9F9F9;
-$color-menu4: #FDFFFD;
-$color-header-coming-footer: #579C87;
+$bg-menu2: #FFF5FE;
+$bg-menu3: #F9F9F9;
+$bg-menu4: #FDFFFD;
+$bg-header-coming-footer: #579C87;
 $color-font-head-coming-foot: #FDCB46;
 $font-head-coming-foot: "Arial";
 @font-face {
@@ -27,6 +27,11 @@ $font-head-coming-foot: "Arial";
   font-family: "Segoe Print";
   src: url("font/Segoe Print.woff") format('woff');
 }
+body{
+  text-align: center;
+  margin: auto;
+  word-break: break-word;
+}
 main{
   box-sizing: border-box;
   word-break: break-word;
@@ -38,7 +43,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-header-coming-footer;
+  background-color: $bg-header-coming-footer;
   flex: 0 0 100%;
   height: 144px;
   font-size: 54px;
@@ -47,7 +52,7 @@ header{
   font-weight: bold;
   letter-spacing: -6px;
 }
-#menu1, #menu2, #menu3, #menu4{
+#menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,8 +84,108 @@ header{
     font-family: "Segoe Print";
   }
 }
-#menu1{
-  background-color: $color-menu1;
+.menu-card {
+  width: 90%;
+  height: 70%;
+  padding: 5%;
+  margin: 5% auto 50% auto;
+  word-wrap: break-word;
+  box-shadow: 3px 0px 12px lightgrey;
+  font-size: 20px;
+  box-sizing: border-box;
+  h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 53px;
+    img {
+      display: none;
+      box-sizing: border-box;
+      object-fit: scale-down;
+      max-width: 100%;
+    }
+  }
+  section {
+    padding-bottom: 50px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 36px;
+    p {
+      &:first-child {
+        flex: 0 0 90%;
+      }
+      &:nth-child(2) {
+        padding-top: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+  #menu1_card{
+    &_identityTop {
+      font-size: 59px;
+      padding-bottom: 65px;
+      font-family: "Devonshire";
+      img {
+        max-width: 100%;
+        box-sizing: border-box;
+        object-fit: scale-down;
+      }
+    }
+    &_identityBottom {
+      font-size: 43px;
+      font-family: "Devonshire";
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 67px;
+        box-sizing: border-box;
+        object-fit: scale-down;
+      }
+    }
+  }
+  .underline-title {
+    position: relative;
+  }
+  .underline-title::after {
+    content: "";
+    background-color: #3d1319;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0.8;
+    -webkit-transition: width 300ms;
+    transition: width 300ms;
+  }
+  .underline-title:hover::after {
+    width: 100%;
+  }
+}
+.before-menu-card{
+  display: flex;
+  .menu-card_title {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 0 55px 0;
+    font-size: 41px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #353535;
+  }
+  .return{
+    display: none;
+  }
+}
+#menu1_homepage{
+  background-color: $bg-menu1;
   font-family: "Devonshire";
   img{
     display: flex;
@@ -101,9 +206,15 @@ header{
       color: $color-font-menu1;
     }
   }
+
 }
-#menu2{
-  background-color: $color-menu2;
+#menu1 .menu-card{
+  background-color: $bg-menu1;
+  color: $color-font-menu1;
+  font-family: "Segoe Print";
+}
+#menu2_homepage{
+  background-color: $bg-menu2;
   h3, p{
     font-family: "croissant";
     font-size: 40px;
@@ -117,8 +228,8 @@ header{
     -webkit-text-fill-color: transparent;
   }
 }
-#menu3{
-  background-color: $color-menu3;
+#menu3_homepage{
+  background-color: $bg-menu3;
   font-family: "dancing";
   a{
     background-image: url("../img/bg-menu3.png");
@@ -126,23 +237,13 @@ header{
     -webkit-text-fill-color: transparent;
   }
 }
-#menu4{
-  background-color: $color-menu4;
+#menu4_homepage{
+  background-color: $bg-menu4;
   font-family: "kaushan";
   a{
     background-image: url("../img/bg-menu4.png");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-}
-h3{
-  display: flex;
-  justify-content: center;
-  img{
-    display: none;
-    box-sizing: border-box;
-    object-fit: scale-down;
-    max-width: 100%;
   }
 }
 #coming{
@@ -151,7 +252,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-header-coming-footer;
+  background-color: $bg-header-coming-footer;
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
   margin: 10% auto 60% auto;
@@ -211,7 +312,7 @@ h3{
   }
 }
 footer{
-  background-color: $color-header-coming-footer;
+  background-color: $bg-header-coming-footer;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -265,15 +366,20 @@ footer{
     font-size: 74px;
     height: 246px;
   }
+  main{
+    p{
+      font-size: 45px;
+    }
+  }
+  .menu-card{
+    margin-bottom: 20%;
+  }
   #coming{
     margin-bottom: 45%;
     p{
       font-size: 35px;
     }
   }
-  p{
-      font-size: 45px;
-    }
   footer{
     flex-direction: row;
     justify-content: space-around;
@@ -295,11 +401,41 @@ footer{
   main{
     flex-direction: row;
   }
-  #menu1, #menu2, #menu3, #menu4{
+  #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
     flex: 0 0 45%;
   }
-  #menu2{
-
+  .before-menu-card{
+    .menu-card_title{
+      flex: 0 0 100%;
+    }
+    .return {
+      display: flex;
+      position: absolute;
+      top: 275px;
+      margin-left: 10%;
+      img{
+        box-sizing: border-box;
+        object-fit: scale-down;
+        max-width: 20%;
+      }
+    }
+ }
+  .menu-card{
+    width: 80%;
+    li{
+      text-align: left;
+      flex-direction: row;
+    }
+    h3 {
+      justify-content: space-between;
+      img {
+        display: flex;
+        flex: 0 0 30%;
+      }
+    }
+    &_identityTop{
+      padding: 87px 0 100px 0;
+    }
   }
   #coming{
     width: 50%;
@@ -312,10 +448,22 @@ footer{
 
 /*Computer screen*/
 @media screen and (min-width: 992px){
-  #menu1, #menu2, #menu3, #menu4{
+  #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
     height: 760px;
     margin-right: 5%;
     }
+  .before-menu-card{
+    padding-top: 70px;
+    .return{
+      top: 350px;
+    }
+  }
+  .menu1_card {
+    padding: 10% 10% 0 10%;
+    &_identityBottom {
+      padding: 70px 0 120px 0;
+    }
+  }
 }
 
 
