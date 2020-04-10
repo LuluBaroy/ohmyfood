@@ -18,6 +18,10 @@
   font-family: "Segoe Print";
   src: url("font/Segoe Print.woff") format("woff");
 }
+@font-face {
+  font-family: "classic-round";
+  src: url("font/Classic Round W00 Medium.woff") format("woff");
+}
 body {
   text-align: center;
   margin: auto;
@@ -85,7 +89,7 @@ header {
   padding: 5%;
   margin: 5% auto 50% auto;
   word-wrap: break-word;
-  box-shadow: 3px 0px 12px lightgrey;
+  box-shadow: 3px 0 12px lightgrey;
   font-size: 20px;
   box-sizing: border-box;
 }
@@ -139,6 +143,21 @@ header {
   max-width: 67px;
   box-sizing: border-box;
   object-fit: scale-down;
+}
+.menu-card #menu2_card_identityTop {
+  font-family: "croissant";
+  font-size: 39px;
+  padding-bottom: 65px;
+  background: #f02f17;
+  background: -moz-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #f02f17), color-stop(0%, #db8528), color-stop(100%, #8f5bfe));
+  background: -webkit-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
+  background: -o-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
+  background: -ms-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
+  background: linear-gradient(to right, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f02f17", endColorstr="#8f5bfe", GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-card .underline-title {
   position: relative;
@@ -205,6 +224,37 @@ header {
   background-color: #FDE0DC;
   color: #3D1319;
   font-family: "Segoe Print";
+}
+
+#menu2 .menu-card {
+  background-color: #FFF5FE;
+  font-family: "classic-round";
+  font-weight: normal;
+}
+#menu2 .menu-card li {
+  padding: 0 10% 36px 10%;
+}
+#menu2 .menu-card h3 {
+  font-size: 24px;
+  font-family: "croissant";
+}
+#menu2 .menu-card #starters {
+  color: #C67412;
+}
+#menu2 .menu-card #starters .underline-title::after {
+  background-color: #C67412;
+}
+#menu2 .menu-card #mainCourses {
+  color: #A56799;
+}
+#menu2 .menu-card #mainCourses .underline-title::after {
+  background-color: #A56799;
+}
+#menu2 .menu-card #desserts {
+  color: #6E4CCC;
+}
+#menu2 .menu-card #desserts .underline-title::after {
+  background-color: #6E4CCC;
 }
 
 #menu2_homepage {
@@ -434,8 +484,8 @@ footer a:hover {
     display: flex;
     flex: 0 0 30%;
   }
-  .menu-card_identityTop {
-    padding: 87px 0 100px 0;
+  .menu-card #menu1_card_identityTop, .menu-card #menu2_card_identityTop {
+    padding: 100px 0 100px 0;
   }
 
   #coming {
@@ -460,10 +510,7 @@ footer a:hover {
     top: 350px;
   }
 
-  .menu1_card {
-    padding: 10% 10% 0 10%;
-  }
-  .menu1_card_identityBottom {
+  #menu1_card_identityBottom {
     padding: 70px 0 120px 0;
   }
 }
