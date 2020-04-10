@@ -1,6 +1,9 @@
 $bg-menu1: #FDE0DC;
 $color-font-menu1: #3D1319;
 $color-font2-menu1: #3C1218;
+$color-font-menu2-starters: #C67412;
+$color-font-menu2-mainCourses: #A56799;
+$color-font-menu2-desserts: #6E4CCC;
 $bg-menu2: #FFF5FE;
 $bg-menu3: #F9F9F9;
 $bg-menu4: #FDFFFD;
@@ -26,6 +29,10 @@ $font-head-coming-foot: "Arial";
 @font-face {
   font-family: "Segoe Print";
   src: url("font/Segoe Print.woff") format('woff');
+}
+@font-face {
+  font-family: "classic-round";
+  src: url("font/Classic Round W00 Medium.woff") format('woff');
 }
 body{
   text-align: center;
@@ -90,7 +97,7 @@ header{
   padding: 5%;
   margin: 5% auto 50% auto;
   word-wrap: break-word;
-  box-shadow: 3px 0px 12px lightgrey;
+  box-shadow: 3px 0 12px lightgrey;
   font-size: 20px;
   box-sizing: border-box;
   h3 {
@@ -146,6 +153,23 @@ header{
         box-sizing: border-box;
         object-fit: scale-down;
       }
+    }
+  }
+  #menu2_card {
+    &_identityTop {
+      font-family: "croissant";
+      font-size: 39px;
+      padding-bottom: 65px;
+      background: rgba(240, 47, 23, 1);
+      background: -moz-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240, 47, 23, 1)), color-stop(0%, rgba(219, 133, 40, 1)), color-stop(100%, rgba(143, 91, 254, 1)));
+      background: -webkit-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
+      background: -o-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
+      background: -ms-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
+      background: linear-gradient(to right, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f02f17', endColorstr='#8f5bfe', GradientType=1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   .underline-title {
@@ -212,6 +236,36 @@ header{
   background-color: $bg-menu1;
   color: $color-font-menu1;
   font-family: "Segoe Print";
+}
+#menu2 .menu-card{
+  background-color: $bg-menu2;
+  font-family: "classic-round";
+  font-weight: normal;
+  li{
+    padding: 0 10% 36px 10%;
+  }
+  h3{
+    font-size: 24px;
+    font-family: "croissant";
+  }
+  #starters{
+    color: $color-font-menu2-starters;
+    .underline-title::after{
+      background-color: $color-font-menu2-starters;
+    }
+  }
+  #mainCourses{
+    color: $color-font-menu2-mainCourses;
+    .underline-title::after{
+      background-color: $color-font-menu2-mainCourses;
+    }
+  }
+  #desserts{
+    color: $color-font-menu2-desserts;
+    .underline-title::after{
+      background-color: $color-font-menu2-desserts;
+    }
+  }
 }
 #menu2_homepage{
   background-color: $bg-menu2;
@@ -433,8 +487,10 @@ footer{
         flex: 0 0 30%;
       }
     }
-    &_identityTop{
-      padding: 87px 0 100px 0;
+    #menu1_card, #menu2_card{
+      &_identityTop {
+        padding: 100px 0 100px 0;
+      }
     }
   }
   #coming{
@@ -458,14 +514,12 @@ footer{
       top: 350px;
     }
   }
-  .menu1_card {
-    padding: 10% 10% 0 10%;
+  #menu1_card{
     &_identityBottom {
       padding: 70px 0 120px 0;
     }
   }
 }
-
 
 /*Large computer screen*/
 @media(min-width: 1200px){
