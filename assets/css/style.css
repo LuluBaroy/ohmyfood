@@ -226,7 +226,7 @@ main {
   margin: 10% auto 60% auto;
   border-radius: 30px;
 }
-#coming p {
+#coming h6 {
   font-size: 20px;
 }
 #coming span {
@@ -333,7 +333,7 @@ main {
   box-sizing: border-box;
   object-fit: scale-down;
 }
-.menu-card #menu1_card_identityBottom {
+.menu-card #menu1_card_identityBottom h2 {
   font-size: 43px;
   font-family: "Devonshire";
   display: flex;
@@ -341,8 +341,9 @@ main {
   align-items: center;
   justify-content: center;
 }
-.menu-card #menu1_card_identityBottom img {
-  max-width: 67px;
+.menu-card #menu1_card_identityBottom h2 img {
+  padding-right: 2%;
+  max-width: 75px;
   box-sizing: border-box;
   object-fit: scale-down;
 }
@@ -559,7 +560,7 @@ main {
   #coming {
     margin-bottom: 45%;
   }
-  #coming p {
+  #coming h6 {
     font-size: 35px;
   }
 
@@ -591,7 +592,7 @@ main {
     width: 50%;
     margin-bottom: 22%;
   }
-  #coming p {
+  #coming h6 {
     font-size: 42px;
   }
 
