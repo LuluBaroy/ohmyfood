@@ -4,8 +4,9 @@ $color-font2-menu1: #3C1218;
 $color-font-menu2-starters: #C67412;
 $color-font-menu2-mainCourses: #A56799;
 $color-font-menu2-desserts: #6E4CCC;
+$color-font-menu3: black;
 $bg-menu2: #FFF5FE;
-$bg-menu3: #F9F9F9;
+$bg-menu3: #EDEFEF;
 $bg-menu4: #FDFFFD;
 $bg-header-coming-footer: #579C87;
 $color-font-head-coming-foot: #FDCB46;
@@ -104,7 +105,7 @@ header{
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     padding-bottom: 53px;
     img {
       display: none;
@@ -119,7 +120,7 @@ header{
   li {
     display: flex;
     flex-direction: column;
-    padding-bottom: 36px;
+    padding: 0 10% 36px 10%;
     p {
       &:first-child {
         flex: 0 0 90%;
@@ -160,14 +161,31 @@ header{
       font-family: "croissant";
       font-size: 39px;
       padding-bottom: 65px;
-      background: rgba(240, 47, 23, 1);
-      background: -moz-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240, 47, 23, 1)), color-stop(0%, rgba(219, 133, 40, 1)), color-stop(100%, rgba(143, 91, 254, 1)));
-      background: -webkit-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
-      background: -o-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
-      background: -ms-linear-gradient(left, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
-      background: linear-gradient(to right, rgba(240, 47, 23, 1) 0%, rgba(219, 133, 40, 1) 0%, rgba(143, 91, 254, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f02f17', endColorstr='#8f5bfe', GradientType=1);
+      background: rgba(143,91,254,1);
+      background: -moz-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(143,91,254,1)), color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(219,133,40,1)), color-stop(25%, rgba(219,133,40,1)), color-stop(100%, rgba(143,91,254,1)));
+      background: -webkit-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+      background: -o-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+      background: -ms-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+      background: linear-gradient(to right, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f5bfe', endColorstr='#8f5bfe', GradientType=1 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  #menu3_card{
+    &_identityTop{
+      font-family: 'dancing';
+      font-size: 90px;
+      padding-bottom: 65px;
+      background: rgba(24,31,240,1);
+      background: -moz-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,31,240,1)), color-stop(0%, rgba(0,34,219,1)), color-stop(48%, rgba(8,134,245,1)), color-stop(100%, rgba(8,134,245,1)));
+      background: -webkit-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
+      background: -o-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
+      background: -ms-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
+      background: linear-gradient(to right, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181ff0', endColorstr='#0886f5', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -236,16 +254,33 @@ header{
   background-color: $bg-menu1;
   color: $color-font-menu1;
   font-family: "Segoe Print";
+  h3{
+    font-size: 32px;
+  }
+  li{
+    padding: 0 0 36px 0;
+  }
+}
+#menu2_homepage{
+  background-color: $bg-menu2;
+  h3, p{
+    font-family: "croissant";
+    font-size: 40px;
+  }
+  p{
+    color: #C77412;
+  }
+  h3{
+    background-image: url("../img/bg-menu2.png");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 #menu2 .menu-card{
   background-color: $bg-menu2;
   font-family: "classic-round";
   font-weight: normal;
-  li{
-    padding: 0 10% 36px 10%;
-  }
   h3{
-    font-size: 24px;
     font-family: "croissant";
   }
   #starters{
@@ -267,21 +302,6 @@ header{
     }
   }
 }
-#menu2_homepage{
-  background-color: $bg-menu2;
-  h3, p{
-    font-family: "croissant";
-    font-size: 40px;
-  }
-  p{
-    color: #C77412;
-  }
-  h3{
-    background-image: url("../img/bg-menu2.png");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 #menu3_homepage{
   background-color: $bg-menu3;
   font-family: "dancing";
@@ -289,6 +309,25 @@ header{
     background-image: url("../img/bg-menu3.png");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+#menu3 .menu-card{
+  background-color: $bg-menu3;
+  font-family: "Segoe Print";
+  #starters{
+    .underline-title::after{
+      background-color: #0228DD;
+    }
+  }
+  #mainCourses{
+    .underline-title::after{
+      background-color: #0670F3;
+    }
+  }
+  #desserts{
+    .underline-title::after{
+      background-color: #229DF9;
+    }
   }
 }
 #menu4_homepage{
@@ -487,7 +526,7 @@ footer{
         flex: 0 0 30%;
       }
     }
-    #menu1_card, #menu2_card{
+    #menu1_card, #menu2_card, #menu3_card{
       &_identityTop {
         padding: 100px 0 100px 0;
       }

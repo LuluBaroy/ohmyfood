@@ -97,7 +97,7 @@ header {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px;
   padding-bottom: 53px;
 }
 .menu-card h3 img {
@@ -112,7 +112,7 @@ header {
 .menu-card li {
   display: flex;
   flex-direction: column;
-  padding-bottom: 36px;
+  padding: 0 10% 36px 10%;
 }
 .menu-card li p:first-child {
   flex: 0 0 90%;
@@ -148,14 +148,29 @@ header {
   font-family: "croissant";
   font-size: 39px;
   padding-bottom: 65px;
-  background: #f02f17;
-  background: -moz-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #f02f17), color-stop(0%, #db8528), color-stop(100%, #8f5bfe));
-  background: -webkit-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
-  background: -o-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
-  background: -ms-linear-gradient(left, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
-  background: linear-gradient(to right, #f02f17 0%, #db8528 0%, #8f5bfe 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f02f17", endColorstr="#8f5bfe", GradientType=1);
+  background: #8f5bfe;
+  background: -moz-linear-gradient(left, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #8f5bfe), color-stop(0%, #f85032), color-stop(0%, #db8528), color-stop(25%, #db8528), color-stop(100%, #8f5bfe));
+  background: -webkit-linear-gradient(left, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
+  background: -o-linear-gradient(left, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
+  background: -ms-linear-gradient(left, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
+  background: linear-gradient(to right, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#8f5bfe", endColorstr="#8f5bfe", GradientType=1 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-card #menu3_card_identityTop {
+  font-family: "dancing";
+  font-size: 90px;
+  padding-bottom: 65px;
+  background: #181ff0;
+  background: -moz-linear-gradient(left, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #181ff0), color-stop(0%, #0022db), color-stop(48%, #0886f5), color-stop(100%, #0886f5));
+  background: -webkit-linear-gradient(left, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
+  background: -o-linear-gradient(left, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
+  background: -ms-linear-gradient(left, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
+  background: linear-gradient(to right, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#181ff0", endColorstr="#0886f5", GradientType=1 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -225,17 +240,35 @@ header {
   color: #3D1319;
   font-family: "Segoe Print";
 }
+#menu1 .menu-card h3 {
+  font-size: 32px;
+}
+#menu1 .menu-card li {
+  padding: 0 0 36px 0;
+}
+
+#menu2_homepage {
+  background-color: #FFF5FE;
+}
+#menu2_homepage h3, #menu2_homepage p {
+  font-family: "croissant";
+  font-size: 40px;
+}
+#menu2_homepage p {
+  color: #C77412;
+}
+#menu2_homepage h3 {
+  background-image: url("../img/bg-menu2.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #menu2 .menu-card {
   background-color: #FFF5FE;
   font-family: "classic-round";
   font-weight: normal;
 }
-#menu2 .menu-card li {
-  padding: 0 10% 36px 10%;
-}
 #menu2 .menu-card h3 {
-  font-size: 24px;
   font-family: "croissant";
 }
 #menu2 .menu-card #starters {
@@ -257,30 +290,28 @@ header {
   background-color: #6E4CCC;
 }
 
-#menu2_homepage {
-  background-color: #FFF5FE;
-}
-#menu2_homepage h3, #menu2_homepage p {
-  font-family: "croissant";
-  font-size: 40px;
-}
-#menu2_homepage p {
-  color: #C77412;
-}
-#menu2_homepage h3 {
-  background-image: url("../img/bg-menu2.png");
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 #menu3_homepage {
-  background-color: #F9F9F9;
+  background-color: #EDEFEF;
   font-family: "dancing";
 }
 #menu3_homepage a {
   background-image: url("../img/bg-menu3.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#menu3 .menu-card {
+  background-color: #EDEFEF;
+  font-family: "Segoe Print";
+}
+#menu3 .menu-card #starters .underline-title::after {
+  background-color: #0228DD;
+}
+#menu3 .menu-card #mainCourses .underline-title::after {
+  background-color: #0670F3;
+}
+#menu3 .menu-card #desserts .underline-title::after {
+  background-color: #229DF9;
 }
 
 #menu4_homepage {
@@ -484,7 +515,7 @@ footer a:hover {
     display: flex;
     flex: 0 0 30%;
   }
-  .menu-card #menu1_card_identityTop, .menu-card #menu2_card_identityTop {
+  .menu-card #menu1_card_identityTop, .menu-card #menu2_card_identityTop, .menu-card #menu3_card_identityTop {
     padding: 100px 0 100px 0;
   }
 
