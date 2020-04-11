@@ -4,7 +4,7 @@
   "description": "Site reservation menus",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/css/main.scss:./assets/css/style.css",
+    "sass": "sass --watch assets/css/sass/main.scss:./assets/css/style.css",
     "prefix": "postcss assets/css/style.css --use autoprefixer -d assets/css/prefixed"
   },
   "repository": {
