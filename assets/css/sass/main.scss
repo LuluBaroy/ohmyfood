@@ -69,6 +69,7 @@ img{
   object-fit: scale-down;
 }
 #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
+  word-break: break-word;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -117,21 +118,21 @@ img{
   p{
     color: $color-font-menu2-homepage_menu;
   }
-  h3{
+  span{
     @include degrade-menu2;
   }
 }
 #menu3_homepage{
   background-color: $bg-menu3;
   font-family: $font-menu3-title;
-  a{
+  span{
     @include degrade-menu3;
   }
 }
 #menu4_homepage{
   background-color: $bg-menu4;
   font-family: $font-menu4-title;
-  a{
+  span{
     @include degrade-menu4;
   }
 }

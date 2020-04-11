@@ -146,6 +146,7 @@ img {
 }
 
 #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage {
+  word-break: break-word;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -208,7 +209,7 @@ img {
 #menu2_homepage p {
   color: #C77412;
 }
-#menu2_homepage h3 {
+#menu2_homepage span {
   background: #8f5bfe;
   background: -moz-linear-gradient(left, #8f5bfe 0%, #f85032 0%, #db8528 0%, #db8528 25%, #8f5bfe 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #8f5bfe), color-stop(0%, #f85032), color-stop(0%, #db8528), color-stop(25%, #db8528), color-stop(100%, #8f5bfe));
@@ -225,7 +226,7 @@ img {
   background-color: #EDEFEF;
   font-family: "dancing";
 }
-#menu3_homepage a {
+#menu3_homepage span {
   background: #181ff0;
   background: -moz-linear-gradient(left, #181ff0 0%, #0022db 0%, #0886f5 48%, #0886f5 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #181ff0), color-stop(0%, #0022db), color-stop(48%, #0886f5), color-stop(100%, #0886f5));
@@ -242,7 +243,7 @@ img {
   background-color: #FDFFFD;
   font-family: "kaushan";
 }
-#menu4_homepage a {
+#menu4_homepage span {
   background: #3d923a;
   background: -moz-linear-gradient(left, #3d923a 0%, #db8528 0%, #3d923a 0%, #3d923a 0%, #3d923a 0%, #beff7f 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #3d923a), color-stop(0%, #db8528), color-stop(0%, #3d923a), color-stop(0%, #3d923a), color-stop(0%, #3d923a), color-stop(100%, #beff7f));
