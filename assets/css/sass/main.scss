@@ -92,9 +92,9 @@ img{
     display: none;
   }
   .mobile{
+    @include zoom;
     img{
       max-width: 100%;
-      @include zoom;
     }
   }
 }
