@@ -88,8 +88,14 @@ img{
     padding-top: 10%;
     font-family: $font-menu1-3-4-card;
   }
-  span{
-    word-wrap: break-word;
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    img{
+      max-width: 100%;
+      @include zoom;
+    }
   }
 }
 #menu1_homepage{
@@ -103,9 +109,6 @@ img{
   }
   a{
     color: $color-font2-menu1;
-    &:visited{
-      color: $color-font2-menu1;
-    }
     &:hover{
       color: $color-font-menu1;
     }
@@ -422,7 +425,7 @@ img{
       justify-content: space-between;
       img {
         display: flex;
-        flex: 0 0 30%;
+        flex: 0 0 20%;
         max-width: 50%;
       }
     }
@@ -449,7 +452,13 @@ img{
   #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
     height: 760px;
     margin-right: 5%;
+    .mobile{
+      display: none;
     }
+    .desktop{
+      display: flex;
+    }
+  }
   .before-menu-card{
     padding-top: 70px;
     .return{
