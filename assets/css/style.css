@@ -146,7 +146,6 @@ img {
 }
 
 #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage {
-  word-break: break-word;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -175,6 +174,9 @@ img {
   font-size: 40px;
   padding-top: 10%;
   font-family: "Segoe Print";
+}
+#menu1_homepage span, #menu2_homepage span, #menu3_homepage span, #menu4_homepage span {
+  word-wrap: break-word;
 }
 
 #menu1_homepage {

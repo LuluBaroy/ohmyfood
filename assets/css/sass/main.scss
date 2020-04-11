@@ -69,7 +69,6 @@ img{
   object-fit: scale-down;
 }
 #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
-  word-break: break-word;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -88,6 +87,9 @@ img{
     font-size: $font40;
     padding-top: 10%;
     font-family: $font-menu1-3-4-card;
+  }
+  span{
+    word-wrap: break-word;
   }
 }
 #menu1_homepage{
