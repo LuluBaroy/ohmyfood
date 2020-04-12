@@ -336,14 +336,14 @@ img {
   padding: 0 10% 36px 10%;
 }
 .menu-card li p:first-child {
-  flex: 0 0 90%;
+  flex: 0 0 85%;
 }
 .menu-card li p:nth-child(2) {
   padding-top: 10px;
   font-weight: bold;
 }
 .menu-card h2 {
-  padding-bottom: 65px;
+  padding-bottom: 45px;
 }
 .menu-card #menu1_card_identityTop {
   font-size: 59px;
@@ -456,7 +456,7 @@ img {
 
 #menu2 .menu-card {
   background-color: #FFF5FE;
-  font-family: "classic round";
+  font-family: "classic-round";
   font-weight: normal;
 }
 #menu2 .menu-card h3 {
@@ -730,7 +730,7 @@ img {
     max-width: 25%;
   }
   .menu-card #menu1_card_identityTop, .menu-card #menu2_card_identityTop, .menu-card #menu3_card_identityTop, .menu-card #menu4_card_identityTop {
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
   }
 
   #legal-notice {
@@ -748,6 +748,17 @@ img {
     height: 760px;
     margin-right: 5%;
   }
+
+  .before-menu-card {
+    padding-top: 70px;
+  }
+
+  #menu1_card_identityBottom {
+    padding: 70px 0 60px 0;
+  }
+}
+/*Large computer screen*/
+@media (min-width: 1200px) {
   #menu1_homepage .mobile, #menu2_homepage .mobile, #menu3_homepage .mobile, #menu4_homepage .mobile {
     display: none;
   }
@@ -755,16 +766,6 @@ img {
     display: flex;
   }
 
-  .before-menu-card {
-    padding-top: 70px;
-  }
-
-  #menu1_card_identityBottom {
-    padding: 70px 0 120px 0;
-  }
-}
-/*Large computer screen*/
-@media (min-width: 1200px) {
   .before-menu-card .return {
     display: flex;
     position: absolute;
