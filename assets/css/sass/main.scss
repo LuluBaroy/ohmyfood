@@ -92,7 +92,7 @@ img{
     display: none;
   }
   .mobile{
-    @include zoom;
+     @include zoom;
     img{
       max-width: 100%;
     }
@@ -426,7 +426,6 @@ img{
       img {
         display: flex;
         flex: 0 0 20%;
-        max-width: 50%;
       }
     }
     #menu1_card, #menu2_card, #menu3_card, #menu4_card{
@@ -465,13 +464,6 @@ img{
       top: 350px;
     }
   }
-  .menu-card{
-    h3{
-      img{
-        max-width: 100%;
-      }
-    }
-  }
   #menu1_card{
     &_identityBottom {
       padding: 70px 0 120px 0;
@@ -481,6 +473,13 @@ img{
 
 /*Large computer screen*/
 @media(min-width: 1200px){
+  .menu-card{
+    h3{
+      img{
+        flex: 0 0 35%;
+      }
+    }
+  }
   main{
     margin: 5% 8% 5% 12%;
   }

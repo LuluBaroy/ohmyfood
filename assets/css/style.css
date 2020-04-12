@@ -157,17 +157,17 @@ img {
   text-align: center;
   padding: 2%;
 }
-#menu1_homepage a, #menu2_homepage a, #menu3_homepage a, #menu4_homepage a {
+#menu1_homepage img, #menu1_homepage a, #menu2_homepage img, #menu2_homepage a, #menu3_homepage img, #menu3_homepage a, #menu4_homepage img, #menu4_homepage a {
   text-decoration: none;
   transform: scale(0.8);
   opacity: 0.6;
   transition: all ease-out 250ms;
 }
-#menu1_homepage a:hover, #menu2_homepage a:hover, #menu3_homepage a:hover, #menu4_homepage a:hover {
+#menu1_homepage img:hover, #menu1_homepage a:hover, #menu2_homepage img:hover, #menu2_homepage a:hover, #menu3_homepage img:hover, #menu3_homepage a:hover, #menu4_homepage img:hover, #menu4_homepage a:hover {
   transform: scale(1);
   opacity: 1;
 }
-#menu1_homepage a:visited, #menu2_homepage a:visited, #menu3_homepage a:visited, #menu4_homepage a:visited {
+#menu1_homepage img:visited, #menu1_homepage a:visited, #menu2_homepage img:visited, #menu2_homepage a:visited, #menu3_homepage img:visited, #menu3_homepage a:visited, #menu4_homepage img:visited, #menu4_homepage a:visited {
   color: inherit;
 }
 #menu1_homepage h3, #menu2_homepage h3, #menu3_homepage h3, #menu4_homepage h3 {
@@ -181,17 +181,17 @@ img {
 #menu1_homepage .desktop, #menu2_homepage .desktop, #menu3_homepage .desktop, #menu4_homepage .desktop {
   display: none;
 }
-#menu1_homepage .mobile a, #menu2_homepage .mobile a, #menu3_homepage .mobile a, #menu4_homepage .mobile a {
+#menu1_homepage .mobile img, #menu1_homepage .mobile a, #menu2_homepage .mobile img, #menu2_homepage .mobile a, #menu3_homepage .mobile img, #menu3_homepage .mobile a, #menu4_homepage .mobile img, #menu4_homepage .mobile a {
   text-decoration: none;
   transform: scale(0.8);
   opacity: 0.6;
   transition: all ease-out 250ms;
 }
-#menu1_homepage .mobile a:hover, #menu2_homepage .mobile a:hover, #menu3_homepage .mobile a:hover, #menu4_homepage .mobile a:hover {
+#menu1_homepage .mobile img:hover, #menu1_homepage .mobile a:hover, #menu2_homepage .mobile img:hover, #menu2_homepage .mobile a:hover, #menu3_homepage .mobile img:hover, #menu3_homepage .mobile a:hover, #menu4_homepage .mobile img:hover, #menu4_homepage .mobile a:hover {
   transform: scale(1);
   opacity: 1;
 }
-#menu1_homepage .mobile a:visited, #menu2_homepage .mobile a:visited, #menu3_homepage .mobile a:visited, #menu4_homepage .mobile a:visited {
+#menu1_homepage .mobile img:visited, #menu1_homepage .mobile a:visited, #menu2_homepage .mobile img:visited, #menu2_homepage .mobile a:visited, #menu3_homepage .mobile img:visited, #menu3_homepage .mobile a:visited, #menu4_homepage .mobile img:visited, #menu4_homepage .mobile a:visited {
   color: inherit;
 }
 #menu1_homepage .mobile img, #menu2_homepage .mobile img, #menu3_homepage .mobile img, #menu4_homepage .mobile img {
@@ -733,7 +733,6 @@ img {
   .menu-card h3 img {
     display: flex;
     flex: 0 0 20%;
-    max-width: 50%;
   }
   .menu-card #menu1_card_identityTop, .menu-card #menu2_card_identityTop, .menu-card #menu3_card_identityTop, .menu-card #menu4_card_identityTop {
     padding: 100px 0 100px 0;
@@ -768,16 +767,16 @@ img {
     top: 350px;
   }
 
-  .menu-card h3 img {
-    max-width: 100%;
-  }
-
   #menu1_card_identityBottom {
     padding: 70px 0 120px 0;
   }
 }
 /*Large computer screen*/
 @media (min-width: 1200px) {
+  .menu-card h3 img {
+    flex: 0 0 35%;
+  }
+
   main {
     margin: 5% 8% 5% 12%;
   }
