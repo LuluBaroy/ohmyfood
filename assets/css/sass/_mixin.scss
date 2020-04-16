@@ -1,42 +1,24 @@
 @mixin degrade-alt-img-menu1{
   background: linear-gradient(to right, #F04A5E, #F5BC65);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu2{
   background: rgba(143,91,254,1);
-  background: -moz-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(143,91,254,1)), color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(219,133,40,1)), color-stop(25%, rgba(219,133,40,1)), color-stop(100%, rgba(143,91,254,1)));
-  background: -webkit-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
-  background: -o-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
-  background: -ms-linear-gradient(left, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
   background: linear-gradient(to right, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f5bfe', endColorstr='#8f5bfe', GradientType=1 );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu3{
   background: rgba(24,31,240,1);
-  background: -moz-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,31,240,1)), color-stop(0%, rgba(0,34,219,1)), color-stop(48%, rgba(8,134,245,1)), color-stop(100%, rgba(8,134,245,1)));
-  background: -webkit-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
-  background: -o-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
-  background: -ms-linear-gradient(left, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
-  background: linear-gradient(to right, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 48%, rgba(8,134,245,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181ff0', endColorstr='#0886f5', GradientType=1 );
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 65%, rgba(8,134,245,1) 100%);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu4{
   background: rgba(61,146,58,1);
-  background: -moz-linear-gradient(left, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(61,146,58,1)), color-stop(0%, rgba(219,133,40,1)), color-stop(0%, rgba(61,146,58,1)), color-stop(0%, rgba(61,146,58,1)), color-stop(0%, rgba(61,146,58,1)), color-stop(100%, rgba(190,255,127,1)));
-  background: -webkit-linear-gradient(left, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
-  background: -o-linear-gradient(left, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
-  background: -ms-linear-gradient(left, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
   background: linear-gradient(to right, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d923a', endColorstr='#beff7f', GradientType=1 );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin underline($bg){
@@ -63,7 +45,7 @@
   a, .mobile img{
     text-decoration: none;
     transform: scale(0.8);
-    opacity: 0.6;
+    opacity: 0.7;
     transition: all ease-out 250ms;
 
     &:hover {
