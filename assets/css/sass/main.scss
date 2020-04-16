@@ -43,7 +43,7 @@ footer{
     font-family: $font-head-coming-foot;
     &:first-child{
       flex: 0 0 45%;
-      padding-top: 2vh;
+      padding-top: 4vh;
     }
     &:last-child{
       flex: 0 0 48%;
@@ -91,7 +91,7 @@ img{
   }
   p{
     font-size: $font40;
-    padding-top: 10%;
+    padding-top: 15%;
     font-family: $font-menu1-3-4-card;
   }
   .desktop{
@@ -120,6 +120,12 @@ img{
       &:hover {
         color: $color-font-menu1;
       }
+    }
+    h3{
+      padding-bottom: 55px;
+    }
+    p{
+      font-weight: bold;
     }
   }
   .mobile{
@@ -157,14 +163,14 @@ img{
 }
 #coming{
   width: 72%;
-  height: 7vh;
+  height: 9vh;
   justify-content: center;
   align-items: center;
   background-color: $bg-header-coming-footer;
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
-  margin: 2vh auto 15vh auto;
-  border-radius: 20px;
+  margin: 6vh auto 20vh auto;
+  border-radius: 12px;
   h6{
     font-size: 7.5vw;
   }
@@ -383,6 +389,7 @@ img{
     }
   }
   main{
+    margin-top: 10%;
     p{
       font-size: $font45;
     }
@@ -486,14 +493,6 @@ img{
     }
     .desktop{
       display: flex;
-    }
-  }
-  #menu1_homepage{
-    h3{
-      padding-bottom: 55px;
-    }
-    p{
-      font-weight: bold;
     }
   }
   .before-menu-card{
