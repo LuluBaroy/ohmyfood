@@ -86,7 +86,7 @@ img{
   box-shadow:  0 0 25px -4px #616585;
   text-align: center;
   padding: 2%;
-  @extend zoom;
+  @extend %zoom;
   h3{
     font-size: $font50;
   }
@@ -99,7 +99,7 @@ img{
     display: none;
   }
   .mobile{
-    @extend zoom;
+    @extend %zoom;
     img{
       max-width: 100%;
     }
