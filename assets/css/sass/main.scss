@@ -1,5 +1,6 @@
 /*import*/
 @import "_mixin.scss";
+@import "_placeholder.scss";
 @import "font-face.scss";
 @import "_variable.scss";
 @import "_animations.scss";
@@ -85,7 +86,7 @@ img{
   box-shadow:  0 0 25px -4px #616585;
   text-align: center;
   padding: 2%;
-  @include zoom;
+  @extend zoom;
   h3{
     font-size: $font50;
   }
@@ -98,7 +99,7 @@ img{
     display: none;
   }
   .mobile{
-    @include zoom;
+    @extend zoom;
     img{
       max-width: 100%;
     }
