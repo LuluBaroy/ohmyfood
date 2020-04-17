@@ -7,19 +7,19 @@
   background: #E38913;
   background: linear-gradient(to right, #E38913 0%, #E38913 27%, #8F5BFE 62%, #8F5BFE 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(0, 0, 0, .2);
 }
 @mixin degrade-menu3{
   background: #0431DF;
   background: linear-gradient(to right, #0431DF 0%, #0431DF 26%, #1B91FA 74%, #1B91FA 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(0, 0, 0, .2);
 }
 @mixin degrade-menu4{
   background: #3D923A;
   background: linear-gradient(to right, #3D923A 0%, #3D923A 27%, #BEFF7F 74%, #BEFF7F 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(0, 0, 0, .2);
 }
 @mixin underline($bg){
   .underline-title {
