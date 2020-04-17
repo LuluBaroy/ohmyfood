@@ -257,27 +257,21 @@ img{
     &_identityTop {
       font-family: $font-menu2-title;
       font-size: 39px;
-      span{
-        @include degrade-menu2;
-      }
+      @include degrade-menu2;
     }
   }
   #menu3_card{
     &_identityTop{
       font-family: $font-menu3-title;
       font-size: 90px;
-      span{
-        @include degrade-menu3;
-      }
+      @include degrade-menu3;
     }
   }
   #menu4_card{
     &_identityTop{
       font-family: $font-menu4-title;
       font-size: 90px;
-      span{
-        @include degrade-menu4;
-      }
+      @include degrade-menu4;
     }
   }
 }
