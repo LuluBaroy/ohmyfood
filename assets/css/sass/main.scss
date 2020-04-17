@@ -262,7 +262,7 @@ img{
       font-family: $font-menu3-title;
       font-size: 90px;
       @include degrade-menu3;
-   }
+  }
   #degrade4{
       font-family: $font-menu4-title;
       font-size: 90px;
@@ -470,7 +470,7 @@ img{
       }
     }
     #menu1_card_identityTop, #degrade2, #degrade3, #degrade4{
-      padding: 50px 0 50px 0;
+        padding: 50px 0 50px 0;
     }
   }
   #legal-notice{
@@ -494,10 +494,8 @@ img{
   .before-menu-card{
     padding-top: 70px;
   }
-  #menu1_card{
-    &_identityBottom {
+  #menu1_card_identityBottom {
       padding: 20px 0 20px 0;
-    }
   }
 }
 

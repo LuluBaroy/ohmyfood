@@ -4,20 +4,17 @@
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu2{
-  background: rgba(143,91,254,1);
-  background: -webkit-linear-gradient(to right, rgba(143,91,254,1) 0%, rgba(248,80,50,1) 0%, rgba(219,133,40,1) 0%, rgba(219,133,40,1) 25%, rgba(143,91,254,1) 100%);
+  background: linear-gradient(90deg, #E38913 27%, #8F5BFE 62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu3{
-  background: rgba(24,31,240,1);
-  background: -webkit-linear-gradient(to right, rgba(24,31,240,1) 0%, rgba(0,34,219,1) 0%, rgba(8,134,245,1) 65%, rgba(8,134,245,1) 100%);
+  background: linear-gradient(167deg, #0020d8, #0889fb 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu4{
-  background: rgba(61,146,58,1);
-  background: -webkit-linear-gradient(to right, rgba(61,146,58,1) 0%, rgba(219,133,40,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(61,146,58,1) 0%, rgba(190,255,127,1) 100%);
+  background: linear-gradient(150deg, #3d923a, #bfff7f 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
