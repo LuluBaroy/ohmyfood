@@ -9,12 +9,12 @@
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu3{
-  background: linear-gradient(167deg, #0020d8, #0889fb 87%);
+  background: -webkit-linear-gradient(167deg, #0020d8, #0889fb 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @mixin degrade-menu4{
-  background: linear-gradient(150deg, #3d923a, #bfff7f 70%);
+  background: -webkit-linear-gradient(150deg, #3d923a, #bfff7f 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

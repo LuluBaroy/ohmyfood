@@ -466,7 +466,7 @@ img{
       }
       img {
         display: flex;
-        max-width: 25%;
+        max-width: 15%;
       }
     }
     #menu1_card_identityTop, #degrade2, #degrade3, #degrade4{
@@ -496,6 +496,13 @@ img{
   }
   #menu1_card_identityBottom {
       padding: 20px 0 20px 0;
+  }
+  .menu-card{
+    h3{
+      img{
+        max-width: 25%;
+      }
+    }
   }
 }
 
