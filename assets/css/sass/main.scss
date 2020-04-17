@@ -466,6 +466,7 @@ img{
       }
       img {
         display: flex;
+        max-width: 25%;
       }
     }
     #menu1_card_identityTop, #degrade2, #degrade3, #degrade4{
@@ -521,5 +522,12 @@ img{
   }
   main{
     margin: 5% 8% 5% 12%;
+  }
+  .menu-card{
+    h3{
+      img{
+        max-width: 100%;
+      }
+    }
   }
 }
