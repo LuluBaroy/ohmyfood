@@ -23,9 +23,6 @@ header{
   height: 144px;
   font-weight: bold;
   letter-spacing: -1vw;
-  h1{
-    word-break: keep-all;
-  }
 }
 footer{
   background-color: $bg-header-coming-footer;
@@ -154,12 +151,18 @@ img{
   span{
     @include degrade-menu3;
   }
+  p{
+    color: #0887FB;
+  }
 }
 #menu4_homepage{
   background-color: $bg-menu4;
   font-family: $font-menu4-title;
   span{
     @include degrade-menu4;
+  }
+  p{
+    color: #72BF56;
   }
 }
 #coming{
@@ -203,7 +206,6 @@ img{
   box-sizing: border-box;
   h3 {
     justify-content: center;
-    font-weight: bold;
     font-size: $font25;
     padding-bottom: 53px;
     img {
@@ -222,7 +224,7 @@ img{
       }
       &:nth-child(2) {
         padding-top: 10px;
-        font-weight: bold;
+        font-size: $font25;
       }
     }
   }
@@ -291,15 +293,26 @@ img{
   }
 }
 #menu1 .menu-card{
+  padding: 5% 10% 5% 10%;
   background-color: $bg-menu1;
   color: $color-font-menu1;
   font-family: $font-menu1-3-4-card;
   @include underline($color-font-menu1);
   h3{
     font-size: 32px;
+    font-weight: bold;
+    span{
+      padding: 0 15px 0 15px;
+    }
+  }
+  ul:last-child{
+    padding-bottom: 50px;
   }
   li{
     padding: 0 0 36px 0;
+  }
+  .price{
+    font-weight: bold;
   }
 }
 #menu2 .menu-card{
@@ -442,14 +455,23 @@ img{
     li{
       text-align: left;
       flex-direction: row;
+      p:nth-child(2){
+        padding-top: 0;
+      }
+      .price{
+        flex: 0 0 15%;
+        text-align: right;
+      }
     }
     h3 {
       justify-content: space-between;
-      flex: 0 0 45%;
       box-sizing: border-box;
+      span{
+        white-space: nowrap;
+        padding: 0 10px 0 10px;
+      }
       img {
         display: flex;
-        max-width: 25%;
       }
     }
     #menu1_card, #menu2_card, #menu3_card, #menu4_card{
@@ -481,7 +503,7 @@ img{
   }
   #menu1_card{
     &_identityBottom {
-      padding: 70px 0 60px 0;
+      padding: 20px 0 20px 0;
     }
   }
 }
@@ -504,13 +526,6 @@ img{
       margin-left: 10%;
       img{
         max-width: 20%;
-      }
-    }
-  }
-  .menu-card{
-    h3{
-      img{
-        max-width: 100%;
       }
     }
   }
