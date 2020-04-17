@@ -472,6 +472,7 @@ img{
       }
       img {
         display: flex;
+        max-width: 30%;
       }
     }
     #menu1_card, #menu2_card, #menu3_card, #menu4_card{
@@ -531,5 +532,12 @@ img{
   }
   main{
     margin: 5% 8% 5% 12%;
+  }
+  .menu-card{
+    h3{
+      img{
+        max-width: 100%;
+      }
+    }
   }
 }
