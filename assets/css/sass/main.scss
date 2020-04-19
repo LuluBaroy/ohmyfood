@@ -433,7 +433,7 @@ img{
         padding-top: 0;
       }
       .price{
-        flex: 0 0 15%;
+        flex: 0 0 20%;
         text-align: right;
       }
     }
@@ -448,9 +448,6 @@ img{
         display: flex;
         max-width: 15%;
       }
-    }
-    #menu1_card_identityTop, #degrade2, #degrade3, #degrade4{
-      padding: 30px 0 30px 0;
     }
   }
 
@@ -499,7 +496,11 @@ img{
   #menu3 .menu-card, #menu4 .menu-card{
     h2{
       font-size: 90px;
+      padding: 100px 0 50px 0;
     }
+  }
+  #menu2 .menu-card .degrade2, #menu3 .menu-card .degrade3, #menu4 .menu-card .degrade4{
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -508,6 +509,11 @@ img{
   main{
     width: 80%;
     margin: 5% auto 5% auto;
+  }
+  #menu3_homepage {
+    .degrade3 {
+      padding: 0;
+    }
   }
   #coming{
     margin-bottom: 12%;
@@ -531,6 +537,11 @@ img{
     h3{
       img{
         max-width: 100%;
+      }
+    }
+    li{
+      .price{
+        flex: 0 0 15%;
       }
     }
   }
