@@ -9,19 +9,27 @@
 .display-flex{
   display: flex;
 }
+.box_size{
+  box-sizing: border-box;
+}
+.justify_center{
+  justify-content: center;
+}
+.align_center{
+  align-items: center;
+}
+.font_bold{
+  font-weight: bold;
+}
 
 /*Header & Footer*/
 header{
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
   background-color: $bg-header-coming-footer;
-  box-sizing: border-box;
   font-size: 15vw;
-  justify-content: center;
-  align-items: center;
   flex: 0 0 100%;
   height: 144px;
-  font-weight: bold;
   letter-spacing: -1vw;
   a{
     text-decoration: none !important;
@@ -39,7 +47,6 @@ footer{
   height: 105px;
   width: 100%;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   a{
     color: $color-font-head-coming-foot;
@@ -69,7 +76,6 @@ body{
   -webkit-touch-callout: none;
 }
 main{
-  box-sizing: border-box;
   flex-wrap: wrap;
   margin: 5%;
   p:not(#font_menu2){
@@ -77,7 +83,6 @@ main{
   }
 }
 img{
-  box-sizing: border-box;
   object-fit: scale-down;
 }
 #menu1_homepage{
@@ -87,7 +92,6 @@ img{
   @extend %menu-homepage-settings;
   img{
     margin: auto;
-    justify-content: center;
     width: 100px;
   }
   a {
@@ -95,9 +99,6 @@ img{
   }
   h3{
     font-size: $font50;
-  }
-  p{
-    font-weight: bold;
   }
 }
 #menu2_homepage{
@@ -140,8 +141,6 @@ img{
 #coming{
   width: 72%;
   height: 8vh;
-  justify-content: center;
-  align-items: center;
   background-color: $bg-header-coming-footer;
   color: $color-font-head-coming-foot;
   font-family: $font-head-coming-foot;
@@ -168,16 +167,11 @@ img{
 
 /*Menu cards*/
 .before-menu-card{
-  display: flex;
   .menu-card_title {
-    display: flex;
     flex: 0 0 100%;
-    justify-content: center;
-    align-items: center;
     padding: 55px 0 55px 0;
     font-size: $font40;
     font-family: $font-head-coming-foot;
-    font-weight: bold;
     color: $color-font-menucard-title;
   }
   .return{
@@ -186,6 +180,10 @@ img{
 }
 .menu-card {
   @extend %menu-card-settings;
+  .padding_title3-4{
+    padding: 30px 0 30px 0;
+    font-size: $font50;
+  }
 }
 #menu1 .menu-card{
   background-color: $bg-menu1;
@@ -194,7 +192,6 @@ img{
   @include underline($color-font-menu1);
   h3{
     font-size: 32px;
-    font-weight: bold;
     padding: 5% 5% 53px 5%;
   }
   ul:last-child{
@@ -202,9 +199,6 @@ img{
   }
   li{
     padding: 0 5% 36px 5%;
-  }
-  .price{
-    font-weight: bold;
   }
   #menu1_card {
     &_identityTop {
@@ -223,9 +217,6 @@ img{
         font-size: $font45;
         font-family: $font-menu1-title;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
         img {
           padding-right: 2%;
           max-width: 75px;
@@ -241,6 +232,7 @@ img{
   .degrade2{
     @include degrade($bg-degrade-menu2);
     font-family: $font-menu2-title;
+    font-size: $font50;
   }
   h3{
     font-family: $font-menu2-title;
@@ -265,9 +257,6 @@ img{
     @include degrade($bg-degrade-menu3);
     font-family: $font-menu3-title;
   }
-  h3{
-    font-weight: bold;
-  }
   #starters{
     @include underline($bg-menu3-underline1);
   }
@@ -286,9 +275,6 @@ img{
     @include degrade($bg-degrade-menu4);
     font-family: $font-menu4-title;
   }
-  h3{
-    font-weight: bold;
-  }
 }
 
 /*Legal Notice*/
@@ -297,10 +283,9 @@ img{
   width: 80%;
   margin: 5% auto 45% auto;
   h2{
-    justify-content: center;
-    align-items: center;
     font-size: 15vw;
     padding: 5%;
+    @include underline(#FED464);
     img{
       display: none;
       padding: 0 5% 0 5%;
@@ -313,7 +298,6 @@ img{
   p{
     font-size: 5vw;
   }
-  @include underline(#FED464);
 }
 
 /*Mobile Landscape and TabletPortrait*/
@@ -402,7 +386,7 @@ img{
   /*Homepage*/
   main{
     flex-direction: row;
-    #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
+    #menu4_homepage, #menu3_homepage, #menu2_homepage, #menu1_homepage{
       flex: 0 0 45%;
       p{
         font-size: $font50;
@@ -474,7 +458,7 @@ img{
 /*Computer screen*/
 @media screen and (min-width: 992px){
   /*Homepage*/
-  #menu1_homepage, #menu2_homepage, #menu3_homepage, #menu4_homepage{
+  #menu4_homepage, #menu3_homepage, #menu2_homepage, #menu1_homepage{
     height: 760px;
   }
   #menu3_homepage{
@@ -494,20 +478,20 @@ img{
     padding-top: 70px;
   }
   .menu-card{
+    .padding_title3-4{
+        font-size: 90px;
+        padding: 100px 0 50px 0;
+    }
     h3{
       img{
         max-width: 25%;
       }
     }
   }
-  #menu3 .menu-card, #menu4 .menu-card{
-    h2{
-      font-size: 90px;
-      padding: 100px 0 50px 0;
+  #menu2 .menu-card{
+    .degrade2{
+      padding: 50px 0 50px 0;
     }
-  }
-  #menu2 .menu-card .degrade2, #menu3 .menu-card .degrade3, #menu4 .menu-card .degrade4{
-    padding: 50px 0 50px 0;
   }
 }
 
