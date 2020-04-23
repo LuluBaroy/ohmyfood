@@ -544,14 +544,11 @@ img{
   }
   footer, .before-menu-card,
   #menu1_card_identityBottom, img, #coming{
-    height: 0;
-    font-size: 0;
-    color: transparent;
     display: none;
     visibility: hidden;
   }
   header{
-    height: 60px;
+    height: 50px;
     font-size: 50px;
     letter-spacing: -9px;
     background-color: white;
@@ -567,6 +564,7 @@ img{
   #menu3 .menu-card, #menu4 .menu-card,
   #menu1_homepage, #menu2_homepage,
   #menu3_homepage, #menu4_homepage{
+    background-color: white;
     .degrade2, .degrade3, .degrade4{
       -webkit-text-fill-color: black;
       background: white;
@@ -587,7 +585,8 @@ img{
     }
   }
   .menu-card{
-    margin-bottom: 0;
+    padding: 0;
+    margin: 5%;
     box-shadow: none;
   }
   .before-menu-card{
@@ -625,6 +624,7 @@ img{
     page-break-inside: avoid;
     font-size: 50px;
     box-shadow: black;
+    background-color: white;
   }
   main{
     margin: 0;
