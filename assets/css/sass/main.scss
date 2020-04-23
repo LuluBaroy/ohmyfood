@@ -539,12 +539,16 @@ img{
 }
 
 @media print{
+  html{
+    transform: scale(0.9);
+  }
   footer, .before-menu-card,
   #menu1_card_identityBottom, img, #coming{
     height: 0;
     font-size: 0;
     color: transparent;
     display: none;
+    visibility: hidden;
   }
   header{
     height: 60px;
