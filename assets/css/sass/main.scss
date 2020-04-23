@@ -537,3 +537,107 @@ img{
     }
   }
 }
+
+@media print {
+  footer, .before-menu-card,
+  #menu1_card_identityBottom, img, #coming{
+    height: 0;
+    font-size: 0;
+    display: none;
+  }
+  header{
+    height: 60px;
+    font-size: 75px;
+    letter-spacing: -9px;
+    background-color: white;
+    color: black;
+    a{
+      color: black;
+      &:visited{
+        color: inherit;
+      }
+    }
+  }
+  #menu1 .menu-card, #menu2 .menu-card,
+  #menu3 .menu-card, #menu4 .menu-card,
+  #menu1_homepage, #menu2_homepage,
+  #menu3_homepage, #menu4_homepage{
+    .degrade2, .degrade3, .degrade4{
+      -webkit-text-fill-color: black;
+    }
+    page-break-inside: avoid;
+    .price{
+      font-size: 15px;
+    }
+    h2{
+      padding: 0 0 15px 0;
+    }
+    h3{
+      font-size: 18px;
+      padding: 0 0 10px 0;
+    }
+    li{
+      padding: 0 0 5px 0;
+    }
+  }
+  .menu-card{
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .before-menu-card{
+    .menu-card_title {
+      padding: 0;
+      font-size: 20px;
+    }
+  }
+  #menu1 .menu-card{
+    color: black;
+    h3{
+      padding-bottom: 10px;
+    }
+    ul:last-child{
+      padding: 0;
+    }
+    #menu1_card_identityTop{
+      padding: 20px 0 20px 0;
+    }
+  }
+  #menu2 .menu-card{
+    #starters, #mainCourses, #desserts{
+      color: black;
+    }
+  }
+  #menu1_homepage, #menu2_homepage,
+  #menu3_homepage, #menu4_homepage {
+    a{
+      opacity: 1;
+    }
+    .degrade2, .degrade3, .degrade4 {
+      -webkit-text-fill-color: black;
+    }
+    height: 190px;
+    page-break-inside: avoid;
+    font-size: 50px;
+    box-shadow: black;
+  }
+  main{
+    margin: 0;
+  }
+  #menu1_homepage{
+    h3{
+      font-size: 50px;
+      color: black;
+    }
+    color: black;
+  }
+  #menu2_homepage{
+    #font_menu2{
+      color: black;
+    }
+  }
+  #menu3_homepage, #menu4_homepage{
+    p{
+      color: black;
+    }
+  }
+}
