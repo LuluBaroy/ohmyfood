@@ -538,16 +538,17 @@ img{
   }
 }
 
-@media print {
+@media print{
   footer, .before-menu-card,
   #menu1_card_identityBottom, img, #coming{
     height: 0;
     font-size: 0;
+    color: transparent;
     display: none;
   }
   header{
     height: 60px;
-    font-size: 75px;
+    font-size: 50px;
     letter-spacing: -9px;
     background-color: white;
     color: black;
@@ -564,6 +565,7 @@ img{
   #menu3_homepage, #menu4_homepage{
     .degrade2, .degrade3, .degrade4{
       -webkit-text-fill-color: black;
+      background: white;
     }
     page-break-inside: avoid;
     .price{
