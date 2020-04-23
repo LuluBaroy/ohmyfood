@@ -540,7 +540,7 @@ img{
 
 @media print{
   html{
-    transform: scale(0.9);
+    transform: scale(0.85);
   }
   footer, .before-menu-card,
   #menu1_card_identityBottom, img, #coming{
@@ -548,7 +548,7 @@ img{
     visibility: hidden;
   }
   header{
-    height: 50px;
+    height: 5px;
     font-size: 50px;
     letter-spacing: -9px;
     background-color: white;
