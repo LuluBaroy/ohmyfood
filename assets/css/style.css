@@ -943,7 +943,7 @@ img {
   }
 
   .menu-card h3 img {
-    max-width: 100%;
+    max-width: 30%;
   }
   .menu-card li .price {
     -webkit-box-flex: 0;
